@@ -1,0 +1,120 @@
+body{
+    position: relative;
+    width: 1680px;
+    height: 920px;
+    Fill: Solid;
+    background: #FFFFFF;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100%;
+}
+
+.alinhar{
+    Display: flex;
+    Flex-direction: column;
+    Align-items: center;
+    justify-content: center;
+}
+
+h3{
+    width: 1392px;
+    height: 72px;
+    margin: 99px 30px 30px 144px;
+    font-family: 'Montserrat', sans-serif;;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height, or 150% */
+
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: #000000;
+}
+
+.text-confirmacao{
+    margin: 30px 30px 60px 144px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 50px;
+    /* or 139% */
+    text-align: center;
+    letter-spacing: -0.015em;
+
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.btn-Telegram{
+    width: 366px;
+    height: 52px;
+    margin: 60px 147px 90px 400px;
+    border-radius: 29px;
+    background: #839BD6;
+    border-radius: 20px;
+    border-style: hidden;
+
+    left: 19.6%;
+    right: 19.75%;
+    top: 21.73%;
+    bottom: 22.5%;
+
+    font-family: 'Montserrat', sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+} 
+
+.btn-Telegram a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn-Youtube{
+    width: 366px;
+    height: 52px;
+    margin: 60px 401px 90px 147px;
+    border-radius: 29px;
+    background: #839BD6;
+    border-radius: 20px;
+    border-style: hidden;
+
+
+    left: 21.51%;
+    right: 21.39%;
+    top: 21.73%;
+    bottom: 22.5%;
+    
+    font-family: 'Montserrat', sans-serif;;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+    
+}
+
+.btn-Youtube a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.imagem{
+    position: absolute;
+    width: 805px;
+    height: 239px;
+    margin: 90px 875px 0px 0px;
+}

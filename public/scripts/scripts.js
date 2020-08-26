@@ -10,3 +10,10 @@ function contRegres(){
 }
 contRegres();
 setInterval(contRegres, 1000);
+
+function mostrarPopUp(){
+    document.getElementById('popup').style.display = 'block';
+}
+function esconderPopUp(){
+    document.getElementById('popup').style.display = 'none';
+}

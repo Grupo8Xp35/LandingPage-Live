@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Descubra como Ficar Bem com as finanças e desenvolver hábitos produtivos! Bate-papo imperdível no dia 27 de Agosto, às 20h. Faça sua inscrição!"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="./public/css/styles.css">
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176298427-1"></script>
@@ -17,46 +19,102 @@
             gtag('config', 'UA-176298427-1');
         </script>
 
-        <title>Ficar Bem</title>
+        <title>Live sobre Organização Financeira e Produtividade - Ficar Bem</title>
+        <!-- Facebook Pixel Code -->
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '853237252118177');
+            fbq('track', 'PageView');
+            </script>
+            <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=853237252118177&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- End Facebook Pixel Code -->
     </head>
     <body>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row" id="navbar">
                 <div class="col-md-4">
-                    <h3 class="text-left">
-                        FBem
-                    </h3>
+                    <img class="img-logo" src="./public/assets/Logo Ficar Bem 1.png" alt="">
                 </div>
-                <div class="col-md-4">
+
+                <div class="buttons">
+                    <div class="col-md-4">
                      
-                    <button type="button" class="btn btn-success">
-                        JoinToday
-                    </button>
-                </div>
-                <div class="col-md-4">
-                     
-                    <button type="button" class="btn btn-success">
-                        Conheçanossocanal
-                    </button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="text-center">
-                        Headline
-                    </h3>
-                    <p class="text-left">
-                        Aliquam eget sapien sapien. Curabitur in metus urna. In hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu</small>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <p class="text-center">
-                        <strong>27 de Agosto de 2020</strong>
-                    </p>
-                    <div>
-                        <strong>20h00</strong>
+                        <button type="button" class="btn-participar">
+                                Participar
+                        </button>
                     </div>
-                    <ul>
+                    <div class="col-md-4">
+                         
+                        <button type="button" class="btn-conheca">
+                            <a href="https://www.youtube.com/channel/UCtn4wwbN6bB-ocM3e5rnIyw?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+                                Conheça nosso canal
+                            </a>
+                            
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row" id="banner">
+                <div class="col-md-6">
+                    <h3 class="text-center" id="organizacao">
+                        Organização Financeira e Produtividade
+                    </h3>
+                    <p class="text-left" id="aovivo">
+                        Como organizar suas finanças e desenvolver hábitos produtivos? Descubra no nosso bate-papo ao vivo!
+                    </p>
+                    <form role="form" action="thanksPage.html">
+                        <div class="title">
+                            <br />
+                            <div>
+                                <strong>Inscreva-se para ser notificado da live!</strong>
+                            </div>
+                        </div>
+                        <div class="nome">
+                            <div class="box-name">
+                                <label for="name">
+                                <label for="name" class="txt-label"></label>
+                                <input class="form-control" type="text" name="name" id="name"
+                            title="Seu nome" class="input-padrao" required placeholder="Seu nome">
+                            </div>
+    
+                            <div class="box-surname">
+                                <label for="surname">
+                                <label for="surname" class="txt-label"></label>
+                                <input class="form-control" type="text" name="surname" id="surname"
+                            title="Seu sobrenome" class="input-padrao" required placeholder="Seu sobrenome">
+                            </div>
+                        </div>
+                        
+
+                        <div class="box-email">
+                            <label for="exampleInputEmail1">
+                            <label for="email" class="txt-label"></label>
+                            <input class="form-control" class="input-padrao" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                        title="Por favor, digite um e-mail válido" required placeholder="Seu melhor e-mail">
+                        </div>
+
+                        <button type="submit" class="btn-registrar">
+                            Registrar
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <p id="data">
+                        <strong class="dia">27 de Agosto de 2020</strong>
+                        <strong class="hora">20h00</strong>
+                    </p>
+                    
+                    <ul class="contagem">
                         <li>
                             <span data-time></span>
                             <div>dias</div>
@@ -77,169 +135,167 @@
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <form role="form">
-                        <div class="form-group">
-                             
-                            <label for="exampleInputEmail1">
-                                Endereço de e-mail
-                            </label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" />
-                        </div>
-                        <div class="form-group">
-                             
-                            <label for="exampleInputPassword1">
-                                Senha
-                            </label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" />
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            Enviar
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-left">
-                        Headline
+            
+            <main>
+                <div class="row">
+                    <h3 class="text-center" id="title2">
+                        A combinação perfeita!
                     </h3>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="text-left">
-                        <strong>Organização Financeira</strong>
-                    </p>
-                    
-                    <div>
-                        Aliquam eget sapien sapien. Curabitur in metus urna. Em hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+                <div class="items">
+                    <div class="item1">
+                        <img src="./public/assets/icon organização financeira.png" class="financas"/>
+                        
+                        <div class="text">
+                            <p class="text-left">
+                                <strong>Organização Financeira</strong>
+                            </p>
+                            
+                            <div class="legend1">
+                                Aprenda como o planejamento pessoal pode mudar <br> a sua relação com o dinheiro, para melhor!
+                            </div>
+                        </div>
+                        
                     </div>
-                    
-                </div>
-                <div class="col-md-4">
-                    <p class="text-left">
-                        <strong>Produtividade</strong>
-                    </p>
-                    
-                    <div>
-                        Aliquam eget sapien sapien. Curabitur in metus urna. Em hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
+    
+                    <div class="item2">
+                        <img src="./public/assets/produtividade icon.png" class="produtividade"/>
+                        <div class="text">
+                            <p class="text-left">
+                                <strong>Produtividade</strong>
+                            </p>
+                            
+                            <div class="legend2">
+                                Entenda porque desenvolver hábitos produtivos <br> promove a organização pessoal e profissional.
+                            </div>
+                        </div>
+                        
                     </div>
-                    
                 </div>
-                <div class="col-md-4">
+                
+
+                <!-- <div class="row" id="main">
+                    <div class="col-md-4">
+                        <img alt="Bootstrap Image Preview" src="./public/assets/icon organização financeira.png" class="financas"/>
+                    </div>
+                    <div class="col-md-4">
+                        <img alt="Bootstrap Image Preview" src="./public/assets/produtividade icon.png" class="produtividade"/>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
+                    <div class="row" id="textImg">
+                    <div class="col-md-4">
+                        <p class="text-left">
+                            <strong class="financa">Organização Financeira</strong>
+                        </p>
+                        
+                        <div class="legend1">
+                            Aprenda como o planejamento pessoal pode mudar a sua relação com o dinheiro, para melhor!
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <p class="text-left">
+                            <strong>Produtividade</strong>
+                        </p>
+                        
+                        <div>
+                            Entenda porque desenvolver hábitos produtivos <br> promove a organização pessoal e profissional.
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-4">
+                    </div> -->
+                <!-- </div> -->
+            </main>
+
+
+            
+            <div class="row" id="titlePart">
                 <div class="col-md-12">
                     <h3 class="text-center">
-                        Headline
+                        Conheça quem vai paricipar do bate-papo
                     </h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                </div>
-                <div class="col-md-4">
-                    <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                </div>
-                <div class="col-md-4">
-                    <img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" />
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <p class="text-left">
+
+            <div class="convidados">
+                <div class="convidado">
+                    <img alt="Bootstrap Image Preview" src="./public/assets/Thais Moraes.png" class="rounded-circle" />
+                    <p class="text">
                         <strong>Thais Moraes</strong>
                     </p>
                     
-                    <div>
-                        Aliquam eget sapien sapien. Curabitur in metus urna. Em hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus
-                    </div>
-                    
-                    <div>
-                        <small>ícone instagram dela</small>
-                    </div>
-                    
-                </div>
-                <div class="col-md-4">
-                    <p class="text-left">
-                        <strong>consectetur adipiscing elit</strong>
+                    <p class="description">
+                        Empreendedora e criadora do curso Simplificare, é apaixonada pelo mundo do empreendedorismo, finanças, desenvolvimento pessoal e planejamento
                     </p>
                     
-                    <div>
-                        Aliquam eget sapien sapien. Curabitur in metus urna. Em hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-                    </div>
-                    
+                    <a href="http://www.instagram.com/thaiismoraes" target="_blank"><img alt="Bootstrap Image Preview" src="./public/assets/instagram icon.png" class="instagram"/> </a>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-left">
-                        <strong>consectetur adipiscing elit</strong>
+                <div class="convidado">
+                    <img alt="Bootstrap Image Preview" src="./public/assets/Luiz Eduardo.png" class="rounded-circle" />
+                    <p class="text">
+                        <strong>Luiz Eduardo</strong>
                     </p>
                     
-                    <div>
-                        Aliquam eget sapien sapien. Curabitur in metus urna. Em hac habitasse platea dictumst. Phasellus eu sem sapien, sed vestibulum velit. Nam purus nibh, lacinia non faucibus et, pharetra in dolor. Sed iaculis posuere diam ut cursus. <em>Morbi commodo sodales nisi id sodales. Proin consectetur, nisi id commodo imperdiet, metus nunc consequat lectus, id bibendum diam velit et dui.</em> Proin massa magna, vulputate nec bibendum nec, posuere nec lacus. <small>Aliquam mi erat, aliquam vel luctus eu, pharetra quis elit. Nulla euismod ultrices massa, et feugiat ipsum consequat eu.</small>
-                    </div>
+                    <p class="description">
+                        Pós Graduado em gestão de projetos pela USP, Engenheiro Civil pelo IFAM, membro do Global Shapers Community, facilitador e membro do comitê de voluntários da Fundação Estudar
+                    </p>
+                    
+                    <a href="http://www.linkedin.com/in/luizeduardobendi" target="_blank"><img alt="Bootstrap Image Preview" src="./public/assets/instagram icon.png" class="instagram"/> </a>
+                </div>
+                <div class="convidado">
+                    <img alt="Bootstrap Image Preview" src="./public/assets/Matheus.png" class="rounded-circle" />
+                    <p class="text">
+                        <strong>Matheus Bertolini</strong>
+                    </p>
+                    
+                    <p class="description">
+                        Mestrando em Comunicação pela UFJF, é um jovem apaixonado por pessoas e acredita no poder da comunicação como transformador social.
+                    </p>
+                    
+                    <a href="https://www.instagram.com/bertolini.matheus/" target="_blank"><img alt="Bootstrap Image Preview" src="./public/assets/instagram icon.png" class="instagram"/> </a>
+                </div>
+
+                
+            </div>
+
+            <hr>
+
+            <div class="parcerias">
+
+               
+
+                <img src="./public/assets/Logo parceria 1 1.png" alt="" class="parceiro1">
+                <img src="" alt="./public/assets/Logo parceria 2 1.png" class="parceiro2">
+                <div class="parceiro3">
+                    <img alt="Bootstrap Image Preview" src="./public/assets/Ellipse.png" class="rounded-circle" />
+                <p class="text">
+                    <strong>Daniele Fernandes</strong>
+                </p>
+                </div>
+                
+            </div>
+            
+            <footer>
+                <img class="img-logo" src="./public/assets/Logo Ficar Bem 1.png" alt="">
+                <hr>
+                <div class="redes">
+                    <a href="https://www.instagram.com/ficar__bem/" target="_blank" rel="noopener noreferrer">
+                        <img class="redes-sociais-1" src="./public/assets/instagram icon.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/Ficar-Bem-101099271726527/" target="_blank" rel="noopener noreferrer">
+                        <img class="redes-sociais-2" src="./public/assets/facebook.png" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCtn4wwbN6bB-ocM3e5rnIyw" target="_blank" rel="noopener noreferrer">
+                        <img class="redes-sociais-3" src="./public/assets/youtube.png" alt="">
+                        
+                    </a>
+                    
                     
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-center">
-                        O que falam de nós
-                    </h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <p>
-                                "O Ficar Bem é uma iniciativa muito boa em tempos de quarentena. O site possui acessibilidade e gera confiança. É bem estruturado e possui boa navegabilidade."
-                            </p>
-                            <div>
-                                <br />
-                                <div>
-                                    <strong>Marisete Barbosa</strong>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4">
-                            <p>
-                                "Os assuntos abordados no evento geram bastante interesse. É confiável por se tratar de uma pauta tão relevante."
-                            </p>
-                            <div>
-                                <br />
-                                <div>
-                                    <strong>Efrem Marques</strong>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-md-4">
-                            <p>
-                                "O Ficar Bem é um site harmonioso que traz equilíbrio para a alma. É bastante agradável."
-                            </p>
-                            <div>
-                                <br />
-                                <div>
-                                    <strong>Maristela de Lourdes</strong>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 class="text-center">
-                        FBem
-                    </h3>
-                    <p class="text-center">
-                        <span>ícones das redes sociais</span>
-                    </p>
-                </div>
-            </div>
+            </footer>
+
+            
         </div>
         <script type="module" src="./public/scripts/scripts.js"></script>
     </body>
