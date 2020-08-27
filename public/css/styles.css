@@ -304,7 +304,7 @@ main .items .item2 .legend2{
 .parcerias{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 hr{
@@ -322,8 +322,13 @@ hr{
 .parcerias .parceiro2{
     width: 288px;
     height: 117px;
-    margin-left: 274px;
-    margin-right: 197px;
+    /* margin-left: 274px;
+    margin-right: 197px; */
+}
+
+.parcerias .parceiro4{
+    width: 265px;
+    height: 110px;
 }
 
 .parcerias .parceiro3{
