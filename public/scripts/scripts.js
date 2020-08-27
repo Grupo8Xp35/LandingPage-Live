@@ -17,3 +17,22 @@ function mostrarPopUp(){
 function esconderPopUp(){
     document.getElementById('popup').style.display = 'none';
 }
+
+// var serialize = function (form){
+//     var json = {};
+//     var data = new FormData(form);
+//     var keys = data.keys();
+//     for(var key = keys.next(); !key.done; key = key.next()){
+//         var values = data.getAll(key.values);
+//         json[key.value] = values.length == 1 ? values[0] : values;
+//     }
+//     return json;
+// }
+
+// var form = document.querySelector("form");
+// var enviar = document.getElementById("enviar");
+// enviar.addEventListener("click", function(e){
+//     e.preventDefault();
+//     var json = serialize(form);
+//     console.log(json);
+// })

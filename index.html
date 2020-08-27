@@ -6,7 +6,8 @@
         <meta name="description" content="Descubra como Ficar Bem com as finanças e desenvolver hábitos produtivos! Bate-papo imperdível no dia 27 de Agosto, às 20h. Faça sua inscrição!"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="./public/css/styles.css">
+        <link rel="stylesheet" href="./public/css/styles.css" media="screen and (color)">
+        <!-- <link rel="stylesheet" href="style.css"> -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176298427-1"></script>
         <script>
@@ -30,11 +31,11 @@
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', '853237252118177');
+            fbq('init', '380771079972212');
             fbq('track', 'PageView');
-            </script>
-            <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=853237252118177&ev=PageView&noscript=1"
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=380771079972212&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Facebook Pixel Code -->
     </head>
@@ -49,7 +50,8 @@
                     <div class="col-md-4">
                      
                         <button type="button" class="btn-participar">
-                                Participar
+                            <a href="#form">Participar</a>
+                                
                         </button>
                     </div>
                     <div class="col-md-4">
@@ -72,13 +74,14 @@
                     <p class="text-left" id="aovivo">
                         Como organizar suas finanças e desenvolver hábitos produtivos? Descubra no nosso bate-papo ao vivo!
                     </p>
-                    <form role="form" action="thanksPage.html">
+                    <form role="form" method="POST" action="/thanksPage" name="contact" netlify>
                         <div class="title">
                             <br />
                             <div>
                                 <strong>Inscreva-se para ser notificado da live!</strong>
                             </div>
                         </div>
+                        <input type="hidden" name="236426604" value="QcVij">
                         <div class="nome">
                             <div class="box-name">
                                 <label for="name">
@@ -103,7 +106,7 @@
                         title="Por favor, digite um e-mail válido" required placeholder="Seu melhor e-mail">
                         </div>
 
-                        <button type="submit" class="btn-registrar">
+                        <button type="submit" class="btn-registrar" onclick="window.location.href='./thanksPage.html'" id="enviar">
                             Registrar
                         </button>
                     </form>
